@@ -14,7 +14,7 @@
                 System.out.println("Successfully connected to SQL Database");
                 String toDate = date.toString();
                 //This query inserts a username, a password, an E-mail and date at the time of execution in a SQL Database Table
-                String query ="INSERT INTO userTable VALUES('sampleUsername','sampleHashedPassword','sampleE-Mail','toDate')";
+                String query ="INSERT INTO __tableName__ VALUES('sampleUsername','sampleHashedPassword','sampleE-Mail','toDate')";
                 stmt.executeUpdate(query);
                 System.out.println("Query executed successfully");
          } catch (SQLException e) {
